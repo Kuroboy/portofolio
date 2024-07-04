@@ -9,7 +9,6 @@
     font-family:'Poppins', sans-serif ;
 }
 
-
 .header {
     backdrop-filter: blur(3px);
     position: fixed;
@@ -59,12 +58,15 @@
     display: flex;
     align-items: center;
     padding: 0 10%;
-    background:  url('assets/profile.png') no-repeat;
-    background-position: 90% center;
+}
+.home-container{
+    display: flex;
+    flex-direction: row;
+}
+.home-container img{
+    justify-content: center;
     animation: blink 2s linear infinite;
 }
-
-
 .home-content{
     max-width: 600px;
     z-index: 99;
@@ -321,6 +323,7 @@ span{
     color: #112e42;
     transition: transform .3s ease;
     border-radius: 5%;
+    transition: all;
 }
 .main-content:hover{
     transform: scale(1.1);
@@ -328,7 +331,7 @@ span{
     z-index: 1;
 }
 .main-content img{
-    height: 300px;
+    height: 350px;
     width: 100%;
     border: 1px solid black;
     border-radius: 5%;
@@ -345,84 +348,71 @@ span{
 }
 @media (max-width: 768px) {
     .porto-content {
-      flex-direction: column; /* Mengubah layout menjadi vertikal */
-      gap: .5; /* Menghilangkan jarak antar elemen */
+      flex-direction: column; 
+      gap: .5; 
     }
   
     .main-content {
-      flex: 1 0 100%; /* Membuat elemen full-width */
-      margin-bottom: 0; /* Menghilangkan jarak antar elemen */
+      flex: 1 0 100%; 
+      margin-bottom: 0; 
     }
   }
-.contact{
-    display: flex;
-    flex-direction: column;
-    min-height: auto;
-    padding-bottom: 7rem;
+.contact {
+    padding: 80px 0;
     background-color: #112e42;
+    text-align: center;
+    color: white;
 }
-.contact h2{
-    color: #fff;
+
+.contact .heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
-.contact form{
-    max-width: 70rem;
-    margin: 0 auto;
+
+.contact .heading span {
+    color: #00abf0;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.contact-items {
+    background-color: #00abf0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 300px;
     text-align: center;
 }
-.contact form .input-box{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+.contact-items:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-.contact form .input-box .input-field{
-    position: relative;
-    width: 49%;
-    margin: .8rem 0;
+
+.contact-items a {
+    display: block;
+    font-size: 2.5em;
+    color: #112e42;
+    margin-bottom: 15px;
 }
-.contact form .input-box .input-field input,
-.contact form .textarea-field textarea{
-    width: 100%;
-    height: 100%;
-    padding: 1.5rem;
-    font-size: 1.3rem;
-    color: #fff;
-    background: transparent;
-    border: .2rem solid #00abf0;
-    border-radius: .6rem;
+
+.contact-items h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
-.contact form .input-box .input-field input::placeholder,
-.contact form .textarea-field textarea::placeholder{
-    color: #ededed;
+
+.contact-items p {
+    font-size: 1.2em;
+    margin-bottom: 0;
 }
-.contact form .focus{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #2488ca;
-    border-radius: .6rem;
-    z-index: -1;
-    transition: .5s;
-}
-.contact form .input-box .input-field input:focus~.focus,
-.contact form .input-box .input-field input:valid~.focus,
-.contact form .textarea-field textarea:focus~.focus,
-.contact form .textarea-field textarea:valid~.focus{
-    width: 100%;
-}
-.contact form .textarea-field{
-    position: relative;
-    margin: .8rem 0 2.7rem;
-    display: flex;
-}
-.contact form .textarea-field textarea{
-    resize: none;
-}
-.contact form .btn-box.btns .btn{
-    cursor: pointer;
-}
+
 .footer{
     display: flex;
     justify-content: center;
@@ -451,6 +441,9 @@ span{
     }
     .footer{
         padding: 2rem 4%;
+    }
+    .home-container img{
+        display: none;
     }
 }
 @media (max-width : 768px){
@@ -509,6 +502,7 @@ span{
         background: white;
         opacity: .6;
     }
+    
 }
 @media (max-width: 520px){
     html{
@@ -529,9 +523,6 @@ span{
 @media (max-width : 462px){
     .home-content h1{
         font-size: 5.1rem;
-    }
-    .contact form .input-box .input-field{
-        width: 100%;
     }
 }
 @media (max-width: 371px){
