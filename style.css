@@ -501,11 +501,6 @@ span{
         transform: translateX(0);
         transition-delay: .25s;
     }
-    .home-imgHover{
-        pointer-events: none;
-        background: white;
-        opacity: .6;
-    }
     
 }
 @media (max-width: 520px){
