@@ -17,7 +17,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#porto">Portofolio</a>
+            <a href="#porto">Project</a>
             <a href="#contact">Contact</a>
 
             <span class="active-nav"></span>
@@ -26,21 +26,24 @@
 
     <!--Hero-->
     <section class="home" id="home">
-            <div class="home-content">
-                <h2>Hallo Semua, Saya</h2>
-                <h1>Muhammad Ridhwan</h1>
-                <h3>Web Developer</h3>
-                <p>Mempelajari hal yang berkaitan dengan
-                    web programing sangat menyenangkan !!!</p>
-                <div class="btn-box">
-                    <a href="#" class="btn">Kontak saya</a>
+            <div class="home-container">
+                <div class="home-content">
+                    <h2>Hallo Semua, Saya</h2>
+                    <h1>Muhammad Ridhwan</h1>
+                    <h3>Web Developer</h3>
+                    <p>Mempelajari hal yang berkaitan dengan
+                        web programing sangat menyenangkan !!!</p>
+                    <div class="btn-box">
+                        <a href="#contact" class="btn">Kontak saya</a>
+                    </div>
                 </div>
+                <img src="./assets/profile.png" alt="">
             </div>
 
             <div class="home-sci">
                 <a href="#"><i class='bx bxl-whatsapp' ></i>></a>
-                <a href="https://github.com/Kuroboy"><i class='bx bxl-github' ></i></a>
-                <a href="https://www.linkedin.com/in/muhammad-ridhwan-28094826b/"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://github.com/Kuroboy" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-ridhwan-28094826b/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
             </div>
             <div class="home-imgHover"></div>
     </section>
@@ -66,66 +69,59 @@
 
     <!-- Portofolio -->
     <section class="porto" id="porto">
-        <h2 class="heading">Portofolio</h2>
+        <h2 class="heading">Project</h2>
         <div class="porto-heading"> 
             <h3>Project Yang Pernah Dibuat</h3>
             <p>Project ini dibuat selama perkuliahan dan pembelajaran online diluar kuliah </p>
         </div>
         <div class="porto-content">
             <div class="main-content">
-                <img src="assets/porto1.png" alt="skripsi">
-                <h3>Absensi Face Recognition</h3>
+                <a href="https://kuroboy.github.io/todoList-app/" target="_blank">
+                    <img src="assets/porto3.PNG" alt="skripsi">
+                <h3>To-Do List Aplikasi</h3>
                 <p>
-                    Aplikasi ini menggunakan bahasa pemrograman python
-                    dan juga menggunakan MySQL sebagai databasenya.
+                    Aplikasi ini menggunakan Reactjs. Merupakan web sederhana yang menampilkan 
+                    catatan list kegiatan yang akan atau sudah dilakukan.
                 </p>
+                </a>
             </div>
             <div class="main-content">
-                <img src="assets/porto2.PNG" alt="skripsi">
+                <a href="https://kuroboy.github.io/Travel-FE/" target="_blank">
+                    <img src="assets/porto2.PNG" alt="skripsi">
                 <h3>Website Travel Agent FE</h3>
                 <p>
                     Aplikasi ini meneggunakan html, css, dan javascript 
                     sebagai bahasa pemrogramannya yang digunakan untuk melakukan validasi pemesanan tiket.
+                    Dapat diakses melalui: 
                 </p>
+                </a>
             </div>
+            
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Full name" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
-                    <span class="focus"></span>
-                </div>
+        <div class="contact-content">
+            <div class="contact-items">
+                <a href="https://wa.me/6287785164000" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                <h3>WhatsApp</h3>
+                <p>(+62) 87785164000</p>
             </div>
-
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <span class="focus"></span>
-                </div>
+            <div class="contact-items">
+                <a href="mailto:m.ridhwan181@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+                <h3>Email</h3>
+                <p>m.ridhwan181@gmail.com</p>
             </div>
-
-            <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage" required></textarea>
-                <span class="focus"></span>
+            <div class="contact-items">
+                <a href="https://www.linkedin.com/in/muhammad-ridhwan-28094826b/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <h3>LinkedIn</h3>
+                <p>Muhammad Ridhwan</p>
             </div>
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
-            </div>
-        </form>
+        </div>
     </section>
+    
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2024 Ridhwan</p>
@@ -134,3 +130,4 @@
      <script src="js/script.js"></script>   
 </body>
 </html>
+
