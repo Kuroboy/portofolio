@@ -58,6 +58,7 @@
     display: flex;
     align-items: center;
     padding: 0 10%;
+    background-color: #ebf4f6;
 }
 .home-container{
     display: flex;
@@ -340,7 +341,7 @@ span{
 .main-content h3{
     font-size: 20px;
     font-weight: 700;
-    color: #00abf0;
+    color: #088395;
     margin: 20px 20px;
 }
 .main-content p{
@@ -348,6 +349,7 @@ span{
     margin: 20px 20px;
     line-height: 1;
     color: black;
+    word-spacing: 10px;
 }
 @media (max-width: 768px) {
     .porto-content {
