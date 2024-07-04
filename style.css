@@ -70,6 +70,7 @@
 .home-content{
     max-width: 600px;
     z-index: 99;
+    margin-top: 40px;
 }
 
 .home-content h1{
@@ -319,7 +320,7 @@ span{
     
 }
 .main-content{
-    background: #d3d3d3;
+    background: #ebf4f6;
     color: #112e42;
     transition: transform .3s ease;
     border-radius: 5%;
@@ -340,11 +341,13 @@ span{
     font-size: 20px;
     font-weight: 700;
     color: #00abf0;
+    margin: 20px 20px;
 }
 .main-content p{
     font-size: 17px;
-    margin: 20px 0 40px;
+    margin: 20px 20px;
     line-height: 1;
+    color: black;
 }
 @media (max-width: 768px) {
     .porto-content {
